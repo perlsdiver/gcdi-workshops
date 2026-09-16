@@ -6,6 +6,8 @@ Ian G. Williams and Zhilang Liu
 
 GC Digital Fellows
 
+![alt text](image.png)
+
 September 16, 2026
 
 # Intended Time Commitment
@@ -17,11 +19,13 @@ From storing hand-coded websites and data repositories to sharing vibe-coded app
 
 ## Longer Description
 
-This workshop is a Open Educational Resource that provides an  overview of version control, Git, and GitHub. It is intended as a practical, and thorough, lesson that also encourages scholarly examinations of the technologies, their platforms, and practices as sites and objects of research. It incorporates brief quizzes and practical exercises. The intended audience are graduate students with limited to no exposure to Git and GitHub, although it may be informative for students familiar with these software tools, who may have learned in a less systematic way.
+This workshop is a Open Educational Resource that provides an  overview of version control, Git, and GitHub. It is intended as a practical, and thorough, lesson that also encourages scholarly examinations of the technologies, their platforms, and practices as sites and objects of research. It incorporates brief quizzes and practical exercises. The intended audience are graduate students with limited to no exposure to Git and GitHub, although it may be informative for students familiar with these software tools, who may have learned in a less systematic way. The workshop provides foundational knowledge that will help the users understand how to interact with core pieces of Internet infrastructure. For participants who use agentic and automated workflows for Git and GitHub, this knowledge will assist them in designing, improving, and troubleshooting those processes.
+
+This is a living document and will be further revised after the in person workshop session on 9/15/2026.
 
 ## Workshop Plan
 
-The workshop will largely follow the lesson plan on Digital Humanities Resource Infrastructure for Teaching Technology (DHRIFT), a project developed by GC Digital Initiatives, which GC Digital Initiatives use for the GC Digital Research Institute. Here we will not complete the entire lesson during the allotted workshop time. Participants are encouraged to complete the remainder on their own. The lesson can be followed along in your browser here:
+This workshop will largely follow the lesson plan on Digital Humanities Resource Infrastructure for Teaching Technology (DHRIFT), a project developed by GC Digital Initiatives, which GC Digital Initiatives use for the GC Digital Research Institute. Here we will not complete the entire lesson during the allotted workshop time. Participants are encouraged to complete the remainder on their own. The lesson can be followed along in your browser here:
 
 https://app.dhrift.org/v2?user=GC-DRI&repo=DRI24&file=git&branch=main&page=1&instUser=GC-DRI&instRepo=GCDRI24Schedule
 
@@ -89,21 +93,24 @@ If you want to then follow along with the challenge in this page, go ahead and u
 
 ## Supplemental Material
 
-This video, created in 2026 for AI vibe-coders who use GitHub ooften without understanding how it works, provides a supplemental overview to some of the concepts explored in this workshop. It is at a much faster pace, so it's worth slowing down and watching at 75% playback speed:
+This video, created in 2026 for AI vibe-coders who use GitHub ooften without understanding how it works, provides a supplemental overview to some of the concepts explored in this workshop. It is at a much faster pace, so it's worth slowing down and watching at 75% playback speed: https://www.youtube.com/watch?v=a9u2yZvsqHA
 
-https://www.youtube.com/watch?v=a9u2yZvsqHA
+### Data sources to study GitHub
+
+[Gitcharts](https://gitcharts.com/) visualizes many useful statistics about GitHub use. This affords a more distant and aggregate view about usage patterns and trends.
+
+[GitHub Search (GHS)](https://seart-ghs.si.usi.ch/) indexes public GitHub repositories to search and sample to use for academic research. See Dabic et al (2021) for a technical explanation, and Hora (2026) et al for an analysis of 10,000 projects to identify the typical structure and contents of GitHub repositories.
+
+### Tools to work with Git and GitHub
+
+GitHub Desktop is  a GUI interface for connecting your local machine to your GitHub account, and is an alternative to using the Command Line. https://github.com/apps/desktop
 
 GitGUI is a project creating a graphical user interface (GUI) for Git. The repository with download instructions are here:
 https://github.com/j6t/git-gui
 
-[Gitcharts](https://gitcharts.com/) visualizes many useful statistics about GitHub use.
+## Additional scholarly literature on GitHub
 
-GitHub Desktop is  a GUI interface for connecting your local machine to your GitHub account, and is an alternative to using the Command Line. https://github.com/apps/desktop
-
-
-## Additional scholarly sources on GitHub
-
-GitHub is the most widely used platform for hosting and sharing software code on the planet. In the era of generative artificial intelligence (genAI), its use has increased and more people who do not consider themselves programmers and software engineers are, often through agentic coding assistance ("vibe coding") using GitHub and similar platforms to store and share code.
+GitHub is the most widely used platform for hosting and sharing software code on the planet, with 225 million users, and hosting over 600 million projects [Sen, 2026](https://www.getpanto.ai/blog/github-statistics). In the era of generative artificial intelligence (genAI), its use has increased and more people who do not consider themselves programmers and software engineers are, often through agentic coding assistance ("vibe coding") using GitHub and similar platforms to store and share code.
 
 Since we are framing this lesson as a scholar's introduction, it's important to recognize that our interests in GitHub can extend beyond framing it as tool we use for our work, or a means of solving practical problems. We can also view GitHub as a platform, a social world, and an infrastructure laden with power and politics.
 
