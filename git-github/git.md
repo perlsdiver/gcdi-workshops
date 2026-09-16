@@ -1,41 +1,111 @@
 # A Scholar's Introduction to Git and GitHub
 
-Ian G. Williams and Sophie Bala
+![An image of a bearded man holding a large stone over his shoulders that displays the text "Handling conflicts since the 1970s", while the text "Source Control tools" is displayed over the man's body](media/source-control-tools.png)
 
-September 15, 2026
+Ian G. Williams and Zhilang Liu
 
-## Front Matter
+GC Digital Fellows
 
-This workshop is a Open Educational Resource that provides a condensed overview of version control, Git, and GitHub. It is intended as a practical overview that also encourages scholarly examinations of the technologies, their platforms, and practices as sites and objects of research. The intended audience are graduate students with none to limited exposure to Git and GitHub.
+September 16, 2026
 
-It will largely follow the lesson plan on Digital Humanities Resource Infrastructure for Teaching Technology (DHRIFT), a project developed by GC Digital Initiatives, though we will skip over some sections in the interes of time:
+# Intended Time Commitment
+1.5-2 hours
+
+## Description
+
+From storing hand-coded websites and data repositories to sharing vibe-coded apps, GitHub is a central pillar of today's digital scholarship infrastructure. An online platform for storing and sharing code, text, and data, it is also used to host and display websites and digital tools, track contributions to shared projects, and examine as a site of cultural data and collective memory. GitHub is built on the version control software Git, and here we will introduce and review both. This workshop explores the history, foundations, and fundamentals of Git and GitHub and offers some practical exercises for getting started. The workshop will also examine case studies and scholarly projects that used Github as a source of data and a field site. This workshop is designed for beginners and is suitable for researchers in any discipline. Prior knowledge of GitHub/programming is not required. If you would like to follow along with the applied part of the workshop, you are encouraged to create a free GitHub account (https://github.com/) before attending. It is advised that you bring your own laptop computer to this workshop.
+
+## Longer Description
+
+This workshop is a Open Educational Resource that provides an  overview of version control, Git, and GitHub. It is intended as a practical, and thorough, lesson that also encourages scholarly examinations of the technologies, their platforms, and practices as sites and objects of research. It incorporates brief quizzes and practical exercises. The intended audience are graduate students with limited to no exposure to Git and GitHub, although it may be informative for students familiar with these software tools, who may have learned in a less systematic way.
+
+## Workshop Plan
+
+The workshop will largely follow the lesson plan on Digital Humanities Resource Infrastructure for Teaching Technology (DHRIFT), a project developed by GC Digital Initiatives, though we will not complete the entire lesson during the allotted workshop time. Participants are encouraged to complete the remainder on their own. The lesson can be followed along in your browser here:
 
 https://app.dhrift.org/v2?user=GC-DRI&repo=DRI24&file=git&branch=main&page=1&instUser=GC-DRI&instRepo=GCDRI24Schedule
 
+For this lesson we will cover sections from the DHRIFT lesson, starting at *Frontmatter*, leading up to *Staging and Committing Changes*.
 
-## Scholarly sources on GitHub
+Further sections, *Pushing To GitHub*, *Cloning and Forking*, and *Theory To Practice* will be completed as a self-study.
 
-GitHub is the most widely used platform for hosting and sharing software code on the planet. In the era of generative artificial intelligence, its use has increased and more people who do not consider themselves programmers and software engineers are, often through agentic coding assistance ("vibe coding") using GitHub and similar platforms to store and share code. For some trends on this, [Gitcharts](https://gitcharts.com/) visualizes many useful statistics.
+### Adjustments to DHRIFT lesson plan
 
-Since we are framing this lesson as a scholar's introduction, it's important to recognize that our interests in GitHub can extend beyond framing it as tool for our work, or a means of solving practical problems. We can also view GitHub as a platform, a social world, and an infrastructure laden with power and politics.
+The original DHRIFT workshop is designed with the assumption that users would have [VS Code](https://code.visualstudio.com/) installed, which makes it easiest to integrate with a GitHub workflow and preview Markdown used for the mock syllabus exercise. This is relevant to the **Creating A Syllabus File** section of the DHRIFT lesson.
 
-GitHub has been the object of many scholarly inquries, some of which are collected here:
+If you do not have VS Code installed at the start of this, an alternative route is to use a native plain text editor from within the command line. In that instance, we'll use [**Nano**](https://www.nano-editor.org/), a freeware text-editor that is easier to use than some other editors built into the command line.
 
-Dabic, O., Aghajani, E., & Bavota, G. (2021, May). Sampling projects in github for MSR studies. In _2021 IEEE/ACM 18th International Conference on Mining Software Repositories (MSR)_ (pp. 560-564). IEEE.
+For page 15, alternative instructions are as follows:
 
-Al Rubaye, A. (2024). GitHub Uncovered: Revealing the Social Fabric of Software Development Communities. https://stars.library.ucf.edu/cgi/viewcontent.cgi?article=1133&context=etd2023
+To create the syllabus.md file enter this code into the command line from the git-practice folder.
 
-Hora, A., Montandon, J. E., & Costa, D. E. (2026). What's Inside a GitHub Repository? An Empirical Study on the Contents of 10K Projects. _arXiv preprint arXiv:2605.16701_.
+```
+$ touch syllabus.md
+```
 
-Escamilla, E., Klein, M., Cooper, T., Rampin, V., Weigle, M. C., & Nelson, M. L. (2022, September). The rise of GitHub in scholarly publications. In _International Conference on Theory and Practice of Digital Libraries_ (pp. 187-200). Cham: Springer International Publishing.
+Then check the folder to see that the file was created.
 
-Díaz, O., Venable, J. R., & Garmendia, X. (2022, May). Are Journals and Repositories Enough? Design Knowledge Accumulation as a Diffusion of Innovation Practice. In _International Conference on Design Science Research in Information Systems and Technology_ (pp. 405-416). Cham: Springer International Publishing.
+```
+$ ls git-practice
+````
 
-Kraishan, O. (2025). Launch-Day Diffusion: Tracking Hacker News Impact on GitHub Stars for AI Tools. _arXiv preprint arXiv:2511.04453_.
+Now we'll use **nano** to edit the syllabus.md file.
 
-Dodds, T., Reséndez, V., von Nordheim, G., Araujo, T., & Moeller, J. (2024). Collaborative coding cultures: How journalists use GitHub as a trading zone. _Digital Journalism_, _12_(7), 1030-1051.
+```
+$ nano syllabus.md
+```
 
-Tang, K., Li, B., & Zhang, X. (2026). Paper with code diffusion on GitHub: Disruption or consolidation?. _Journal of Informetrics_, _20_(2), 101806.
+From here, either enter the text below into the file, or copy and past it
+
+```
+# My Syllabus Heading
+
+## Readings
+
+*This text will appear italicized.*
+**This text will appear bold.**
+
+- Reading one
+- Reading two
+- Reading three
+
+I teach at [The Graduate Center, CUNY](https://www.gc.cuny.edu).
+
+This is a paragraph in markdown. It's separated from the paragraph below with a blank line. If you know HTML, it's kind of like the <p> tag. That means that there is a little space before and after the paragraph when it is rendered.
+
+This is a second paragraph in markdown, which I'll use to tell you what I like about markdown. I like markdown because it looks pretty good, if minimal, whether you're looking at the rendered or unrendered version. It's like tidy HTML.
+```
+
+When you finish, press **command** + **o**. It will then ask you to over-write. Hit **Enter** to do so. Then hit **command** + **x** to exit nano and return to the command line view.
+
+A limitation to this workaround is that you will not be able to view the formatting changes in Markdown immediately.
+
+If you want to then follow along with the challenge in 
+
+## Additional scholarly sources on GitHub
+
+GitHub is the most widely used platform for hosting and sharing software code on the planet. In the era of generative artificial intelligence (genAI), its use has increased and more people who do not consider themselves programmers and software engineers are, often through agentic coding assistance ("vibe coding") using GitHub and similar platforms to store and share code. For some trends on this, [Gitcharts](https://gitcharts.com/) visualizes many useful statistics.
+
+Since we are framing this lesson as a scholar's introduction, it's important to recognize that our interests in GitHub can extend beyond framing it as tool we use for our work, or a means of solving practical problems. We can also view GitHub as a platform, a social world, and an infrastructure laden with power and politics.
+
+GitHub has been the object of many scholarly inquries, some of which are covered in the DHRIFT lesson. Some further and more recent studies are collected here here:
+
+
+- Al Rubaye, A. (2024). GitHub Uncovered: Revealing the Social Fabric of Software Development Communities. https://stars.library.ucf.edu/cgi/viewcontent.cgi?article=1133&context=etd2023
+
+- Dabic, O., Aghajani, E., & Bavota, G. (2021, May). Sampling projects in github for MSR studies. In _2021 IEEE/ACM 18th International Conference on Mining Software Repositories (MSR)_ (pp. 560-564). IEEE.
+
+- Díaz, O., Venable, J. R., & Garmendia, X. (2022, May). Are Journals and Repositories Enough? Design Knowledge Accumulation as a Diffusion of Innovation Practice. In _International Conference on Design Science Research in Information Systems and Technology_ (pp. 405-416). Cham: Springer International Publishing.
+
+- Dodds, T., Reséndez, V., von Nordheim, G., Araujo, T., & Moeller, J. (2024). Collaborative coding cultures: How journalists use GitHub as a trading zone. _Digital Journalism_, _12_(7), 1030-1051.
+
+- Escamilla, E., Klein, M., Cooper, T., Rampin, V., Weigle, M. C., & Nelson, M. L. (2022, September). The rise of GitHub in scholarly publications. In _International Conference on Theory and Practice of Digital Libraries_ (pp. 187-200). Cham: Springer International Publishing.
+
+- Hora, A., Montandon, J. E., & Costa, D. E. (2026). What's Inside a GitHub Repository? An Empirical Study on the Contents of 10K Projects. _arXiv preprint arXiv:2605.16701_.
+
+- Kraishan, O. (2025). Launch-Day Diffusion: Tracking Hacker News Impact on GitHub Stars for AI Tools. _arXiv preprint arXiv:2511.04453_.
+
+- Tang, K., Li, B., & Zhang, X. (2026). Paper with code diffusion on GitHub: Disruption or consolidation?. _Journal of Informetrics_, _20_(2), 101806.
 
 ## Version Control
 
@@ -57,6 +127,12 @@ Let's consider how we do this as individuals, but also, how we do do this in tea
 
 We compiled some of these, for fun and to collect how Git and GitHub are represented in Internet cultures.
 
+![alt text](media/github-follower.png)
+
+
 ![alt text](media/git-good.png)
+
+
+![alt text](media/github-copilot-meme.png)
 
 
