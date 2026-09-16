@@ -2,9 +2,11 @@
 
 ![An image of a bearded man holding a large stone over his shoulders that displays the text "Handling conflicts since the 1970s", while the text "Source Control tools" is displayed over the man's body](media/source-control-tools.png)
 
-Ian G. Williams and Zhilang Liu
+[Ian G. Williams](perlsdiver) and [Zhilang Liu](https://github.com/zhilang613)
 
-GC Digital Fellows
+[GC Digital Fellows](https://github.com/orgs/GCDigitalFellows/)
+
+
 
 ![alt text](image.png)
 
@@ -29,9 +31,9 @@ This workshop will largely follow the lesson plan on Digital Humanities Resource
 
 https://app.dhrift.org/v2?user=GC-DRI&repo=DRI24&file=git&branch=main&page=1&instUser=GC-DRI&instRepo=GCDRI24Schedule
 
-For this lesson we will cover sections from the DHRIFT lesson, starting at *Frontmatter*, leading up to *Staging and Committing Changes*. What this means is that we will cover the background and conceptual overview of version control, Git, and GitHub. We will then cover practical exercises in Git using the Command Line.
+For this lesson we will cover sections from the DHRIFT lesson, starting at *Frontmatter*, leading up to *Staging and Committing Changes*. What this means is that we will cover the background and conceptual overview of version control, Git, and GitHub. We will then cover practical exercises in Git using the Command Line. That includes exploring how install and set up Git, creating a projects folder, initializing Git, creating, editing, and staging a sample syllabus in Markdown, and committing that within Git.
 
-Further sections, *Pushing To GitHub*, *Cloning and Forking*, and *Theory To Practice* will be completed as a self-study.
+Further sections, *Pushing To GitHub*, *Cloning and Forking*, and *Theory To Practice* can be completed as a self-study. Participants are encouraged to contact GC Digital Fellows for individual consultations if they'd like further support, and welcome to register for and attend future events.
 
 ### Adjustments to DHRIFT lesson plan
 
